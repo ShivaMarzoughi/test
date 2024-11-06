@@ -165,12 +165,3 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:8000",
     "http://0.0.0.0:8000",
 ]
-
-# تنظیمات بعد از نصب heroku
-import dj_database_url
-DATABASES = {
-    'default': dj_database_url.config(default='postgres://localhost:5432')
-}
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_URL = '/static/'
